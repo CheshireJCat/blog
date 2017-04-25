@@ -1,5 +1,6 @@
 ---
 title:  My First Blog
+date: 2016-05-30
 categories: 
 - daisy
 tags: 

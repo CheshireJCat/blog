@@ -1,5 +1,6 @@
 ---
 title:  用github pages搭建博客
+date: 2016-05-31
 categories: 
 - config
 tags: 
