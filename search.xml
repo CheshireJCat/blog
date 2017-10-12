@@ -1,14 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[tester]]></title>
-    <url>%2Fblog%2Fno%2F2017-10-12-tester.html</url>
-    <content type="text"><![CDATA[test]]></content>
-      <tags>
-        <tag>tester</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[Hexo 添加友情链接(静态数据文件)]]></title>
     <url>%2Fblog%2Fconfig%2F2017-04-25-1493100956922.html</url>
     <content type="text"><![CDATA[利用hexo3版本的数据文件功能，可以快速添加生成友情链接 1.添加数据文件在Hexo根目录的source目录创建_data目录，然后在新建的目录中新建links.yml文件，并添加相关配置，如 12百度: http://baidu.com新浪: http://sina.com 2.添加布局文件模板在你想要添加的地方添加模板，我使用的是Next主题，要在footer添加，为了方便，直接找到\themes\next\layout\_partials\footer.swig文件，前面添加：12345678&#123;% if site.data.links %&#125;&lt;div class=&quot;widget tag&quot;&gt; 友情链接： &#123;% for k,v in site.data.links %&#125; &lt;a href=&apos;&#123;&#123; v &#125;&#125;&apos; style=&quot;margin-right:10px&quot;&gt;&#123;&#123; k &#125;&#125;&lt;/a&gt; &#123;% endfor %&#125;&lt;/div&gt;&#123;% endif %&#125; 当然以后为了方便模块化和管理，可以单独建一个文件，然后，用对应的模板语法include进去 这样，以后添加友情链接就很方便了，而且可以举一反三，添加别的新页面和模块内容]]></content>
