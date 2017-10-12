@@ -1,0 +1,1075 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+  <link href="//cdn.bootcss.com/fancybox/2.1.4/jquery.fancybox.min.css" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+  
+
+<link href="//cdn.bootcss.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+
+<link href="/blog/css/main.css?v=5.0.2" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="git jekyll 配置 blog 搭建," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/blog/favicon.ico?v=5.0.2" />
+
+
+
+
+
+
+<meta name="description" content="github pages  注册一个github账号，并验证邮箱；   创建一个repo Create a new repository创建一级域名网站，填写 username.github.io ,例如 CheshireJCat.github.io创建子域名网站，填写任意想取的名字即可   勾选Initialize this repository with a README（可选，建议勾选）">
+<meta name="keywords" content="git jekyll 配置 blog 搭建">
+<meta property="og:type" content="article">
+<meta property="og:title" content="用github pages搭建博客">
+<meta property="og:url" content="http://lmaomaoz.com/config/2016-05-31-use-github-pages-build-blog.html">
+<meta property="og:site_name" content="柴郡猫の博客">
+<meta property="og:description" content="github pages  注册一个github账号，并验证邮箱；   创建一个repo Create a new repository创建一级域名网站，填写 username.github.io ,例如 CheshireJCat.github.io创建子域名网站，填写任意想取的名字即可   勾选Initialize this repository with a README（可选，建议勾选）">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2017-10-12T04:01:26.887Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="用github pages搭建博客">
+<meta name="twitter:description" content="github pages  注册一个github账号，并验证邮箱；   创建一个repo Create a new repository创建一级域名网站，填写 username.github.io ,例如 CheshireJCat.github.io创建子域名网站，填写任意想取的名字即可   勾选Initialize this repository with a README（可选，建议勾选）">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Mist',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    }
+  };
+</script>
+
+
+
+
+  <link rel="canonical" href="http://lmaomaoz.com/config/2016-05-31-use-github-pages-build-blog.html"/>
+
+
+  <title> 用github pages搭建博客 | 柴郡猫の博客 </title>
+</head>
+
+<body itemscope itemtype="//schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?8170fc2f69a74ae7cc3a665158dfdf4a";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="//schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/blog/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">柴郡猫の博客</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle"></p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/blog/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/blog/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/blog/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/blog/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup">
+ <span class="search-icon fa fa-search"></span>
+ <input type="text" id="local-search-input">
+ <div id="local-search-result"></div>
+ <span class="popup-btn-close">close</span>
+</div>
+
+
+    </div>
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="//schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                用github pages搭建博客
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-05-31T00:00:00+08:00" content="2016-05-31">
+              2016-05-31
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/blog/categories/config/" itemprop="url" rel="index">
+                    <span itemprop="name">config</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+          
+          
+             <span id="/blog/config/2016-05-31-use-github-pages-build-blog.html" class="leancloud_visitors" data-flag-title="用github pages搭建博客">
+               &nbsp; | &nbsp;
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               <span class="post-meta-item-text">阅读次数 </span>
+               <span class="leancloud-visitors-count"></span>
+              </span>
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h4 id="github-pages"><a href="#github-pages" class="headerlink" title="github pages"></a>github pages</h4><hr>
+<ol>
+<li>注册一个github账号，并验证邮箱；  </li>
+<li>创建一个repo <code>Create a new repository</code><br>创建一级域名网站，填写 <code>username.github.io</code> ,例如 <code>CheshireJCat.github.io</code><br>创建子域名网站，填写任意想取的名字即可  </li>
+<li>勾选<code>Initialize this repository with a README</code>（可选，建议勾选）  </li>
+<li>点击<code>Create repository</code>按钮，生成repo</li>
+<li>进入repo页面，点击<code>Settings</code>按钮进入设置  </li>
+<li>在 <code>GitHub Pages</code> 项目，点击<code>Launch automatic page generator</code>，然后选择模板，确认即可  </li>
+<li>在地址栏 输入 <code>username.github.io</code>或者<code>username.github.io/repoName</code> 即可进入创建好的网站主页  <a id="more"></a>
+<h4 id="git管理"><a href="#git管理" class="headerlink" title="git管理"></a>git管理</h4></li>
+</ol>
+<hr>
+<p>可以在web页面进行代码管理，或者下载客户端，lz比较喜欢用黑窗口  </p>
+<h5 id="1-下载安装"><a href="#1-下载安装" class="headerlink" title="1. 下载安装"></a>1. 下载安装</h5><p>git <a href="https://git-scm.com/download/" target="_blank" rel="external">https://git-scm.com/download/</a>  </p>
+<blockquote>
+<p>Windows下要使用很多Linux/Unix的工具时，需要Cygwin这样的模拟环境，Git也一样。Cygwin的安装和配置都比较复杂，就不建议你折腾了。不过，有高人已经把模拟环境和Git都打包好了，名叫msysgit，只需要下载一个单独的exe安装程序，其他什么也不用装，绝对好用。  </p>
+<p>msysgit是Windows版的Git，从<a href="https://git-for-windows.github.io下载（网速慢的同学请移步国内镜像），按默认选项安装即可。" target="_blank" rel="external">https://git-for-windows.github.io下载（网速慢的同学请移步国内镜像），按默认选项安装即可。</a>  </p>
+<p>安装完成后，在开始菜单里找到“Git”-&gt;“Git Bash”，蹦出一个类似命令行窗口的东西，就说明Git安装成功 </p>
+</blockquote>
+<p>git命令行也可以使用<code>tab</code>键自动补全命令  </p>
+<h6 id="成功后，设置全局参数"><a href="#成功后，设置全局参数" class="headerlink" title="成功后，设置全局参数"></a>成功后，设置全局参数</h6><p><code>git config --global user.name &quot;Your Name&quot;</code> </p>
+<p><code>git config --global user.email &quot;email@example.com&quot;</code>  </p>
+<h6 id="让git显示颜色"><a href="#让git显示颜色" class="headerlink" title="让git显示颜色"></a>让git显示颜色</h6><p><code>git config --global color.ui true</code>  </p>
+<p>(如需更新git  <code>git clone https://github.com/git/git</code>)   </p>
+<p>详细git教程推荐  <a href="http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000" target="_blank" rel="external">廖雪峰的git教程</a>  </p>
+<h5 id="2-克隆远程仓库代码到本地"><a href="#2-克隆远程仓库代码到本地" class="headerlink" title="2. 克隆远程仓库代码到本地"></a>2. 克隆远程仓库代码到本地</h5><p><code>mkdir blog</code>  </p>
+<p><code>cd blog</code>    </p>
+<p><code>git clone https://github.com/CheshireJCat/blog</code>  </p>
+<p>本地Git仓库和GitHub仓库之间的传输是通过SSH加密的，需要一点设置 ：</p>
+<h5 id="3-创建SSH-Key"><a href="#3-创建SSH-Key" class="headerlink" title="3. 创建SSH Key"></a>3. 创建SSH Key</h5><p> <code>ssh-keygen -t rsa -C &quot;youremail@example.com&quot;</code>    </p>
+<p>登录github，<code>点击右上角头像 &gt; settings &gt; SSH and GPG keys</code>  </p>
+<p>或者进入<a href="https://github.com/settings/keys" target="_blank" rel="external">https://github.com/settings/keys</a>    </p>
+<p>在你用户主目录里找到<code>.ssh</code>目录，打开公钥<code>id_rsa.pub</code>,将内容添加到Key里，就可以向git托管推送本地代码了  </p>
+<h5 id="4-推送本地更新到远程仓库"><a href="#4-推送本地更新到远程仓库" class="headerlink" title="4. 推送本地更新到远程仓库"></a>4. 推送本地更新到远程仓库</h5><p>将工作去代码修改部分转移到暂存区  </p>
+<p><code>git add .</code>  </p>
+<p>将暂存区内容提交到当前分支  </p>
+<p><code>git commit -m &quot;update info&quot;</code>  </p>
+<p>提交到远程仓库  </p>
+<p>如果是<code>CheshireJCat.github.io</code>  根域名</p>
+<p><code>git push origin master</code>  </p>
+<p>子域名默认会将网站代码建立到 <code>gh-pages</code> 分支,提交需使用  </p>
+<p><code>git push origin gh-pages</code></p>
+<p>会提示输入验证信息（github的登录邮箱和密码）  </p>
+<p>常见报错处理请参考<a href="http://www.open-open.com/lib/view/open1366080269265.html" target="_blank" rel="external">http://www.open-open.com/lib/view/open1366080269265.html</a></p>
+<h4 id="jekyll"><a href="#jekyll" class="headerlink" title="jekyll"></a>jekyll</h4><hr>
+<h6 id="确保电脑安装了ruby、pyhon、easy-install-并配置好了环境变量"><a href="#确保电脑安装了ruby、pyhon、easy-install-并配置好了环境变量" class="headerlink" title="确保电脑安装了ruby、pyhon、easy_install 并配置好了环境变量"></a>确保电脑安装了<code>ruby、pyhon、easy_install</code> 并配置好了环境变量</h6><p>测试代码如下：  </p>
+<p><code>python -V</code>  </p>
+<p><code>easy_install --version</code>  </p>
+<p><code>ruby -v</code>  </p>
+<h6 id="安装python"><a href="#安装python" class="headerlink" title="安装python"></a>安装python</h6><p>下载<a href="https://www.python.org/downloads/" target="_blank" rel="external">https://www.python.org/downloads/</a><br>安装，添加到环境变量  </p>
+<h6 id="安装easy-install"><a href="#安装easy-install" class="headerlink" title="安装easy_install"></a>安装easy_install</h6><p>下载<a href="!--￼1--&gt;/sources/python/ez_setup.py">/sources/python/ez_setup.py</a>  </p>
+<p>使用python运行ez_setup.py文件  </p>
+<p><code>python ez_setup.py</code>  </p>
+<p>python文件夹下面多了个scripts的目录,表示安装成功了  </p>
+<p><code>右键我的电脑--高级系统设置--高级--环境变量--系统变量--path--编辑--后面加上  ;C:\Python27\Scripts</code>设置好全局变量，保存  </p>
+<p>cmd控制台输入 <code>easy_install --version</code>测试安装</p>
+<h6 id="安装ruby"><a href="#安装ruby" class="headerlink" title="安装ruby"></a>安装ruby</h6><p>下载<a href="http://rubyinstaller.org/downloads/" target="_blank" rel="external">http://rubyinstaller.org/downloads/</a>    </p>
+<p>解压，双击运行，next。。。出现<code>Add Ruby executables to your PATH</code>时勾选，最后将<code>C:\Ruby\bin</code>添加到环境变量  </p>
+<p>cmd控制台输入 <code>ruby -v</code>测试安装</p>
+<h6 id="安装-Pygments-语法高亮的插件"><a href="#安装-Pygments-语法高亮的插件" class="headerlink" title="安装 Pygments 语法高亮的插件"></a>安装 Pygments 语法高亮的插件</h6><p>需要安装 Python 并在网站的配置文件 _config.yml 里将 highlighter 的值设置为 pygments  </p>
+<p><code>easy_install Pygments</code></p>
+<h6 id="安装Jekyll"><a href="#安装Jekyll" class="headerlink" title="安装Jekyll"></a>安装Jekyll</h6><p><code>gem install jekyll</code>  </p>
+<p>由于墙的原因，这里一般会报错  解决办法<a href="http://www.haorooms.com/post/gem_not_use" target="_blank" rel="external">解决国内gem不能用的问题</a>  </p>
+<p><code>gem sources --remove https://rubygems.org/</code>  </p>
+<p><code>gem sources -a https://ruby.taobao.org/</code>  </p>
+<p><code>gem sources -l</code>  </p>
+<p>安装之后，用命令行进入一个文件夹，新建一个站点  </p>
+<p><code>jekyll new myblog</code>  </p>
+<p>进入目录  </p>
+<p><code>cd myblog</code>  </p>
+<p>开启服务  </p>
+<p><code>jekyll serve</code>  </p>
+<p>默认端口为4000，如报错，可能原因为端口被占用时，修改站点根目录下面的 <code>_config.yml</code>,添加  </p>
+<p><code>port: 5001</code>  </p>
+<p>重新<code>jekyll serve</code>  运行即可  </p>
+<p>测试成功后，将此站点的文件拷贝替换到之前的blog文件夹  </p>
+<pre><code>git add .  
+git commit -m &quot;update&quot;  
+git push origin gh-pages
+</code></pre><p>更新到远程仓库即可   </p>
+<h4 id="发表博客"><a href="#发表博客" class="headerlink" title="发表博客"></a>发表博客</h4><hr>
+<p>在<code>_post</code>文件夹，复制或新建一个html或者markdown文件，命名为<code>年-月-日-标题.markdown</code>（如<code>2016-05-30-new-blog.markdown</code>）格式  </p>
+<p>头部输入：  </p>
+<pre><code class="ruby">---
+<span class="symbol">layout:</span> default
+<span class="symbol">title:</span>  <span class="string">"My First Blog"</span>
+<span class="symbol">category:</span> daisy
+<span class="symbol">excerpt:</span> my first daisy <span class="keyword">in</span> <span class="number">2016</span>. 
+<span class="symbol">tags:</span> daisy
+---
+</code></pre>
+<p><code>layout</code>    表示模板文件  </p>
+<p><code>title</code>     博客标题  </p>
+<p><code>category</code>  博客分类  </p>
+<p><code>excerpt</code>   博客摘要  </p>
+<p><code>tags</code>      博客标签  </p>
+<p>然后再下面输入博客的内容,然后用git提交，就可以了<br><a href="http://www.bluesdream.com/blog/markdown-cheatsheet-syntax-manual.html" target="_blank" rel="external">markdown语法</a><br><a href="http://www.markdown.cn/" target="_blank" rel="external">markdown语法详解</a></p>
+<h4 id="域名绑定"><a href="#域名绑定" class="headerlink" title="域名绑定"></a>域名绑定</h4><hr>
+<p>以我自己的域名为例<code>lmaomaoz.com</code>  </p>
+<p>在blog根目录下新建一个文件  <code>CNAME</code>   </p>
+<p>在里面输入自己的顶级域名  </p>
+<p><code>lmaomaoz.com</code>  </p>
+<p>然后用git提交到远程  </p>
+<p>在域名解析控制台解析域名，lz用的万网（和阿里云合作了）解析的  </p>
+<h5 id="添加两条A记录："><a href="#添加两条A记录：" class="headerlink" title="添加两条A记录："></a>添加两条A记录：</h5><p>记录类型是<code>A</code>  </p>
+<p>主机记录是<code>@</code>  </p>
+<p>解析线路<code>默认</code>  </p>
+<p>记录值一个用<code>192.30.252.154</code>  </p>
+<p>另一个用<code>192.30.252.153</code>    </p>
+<h5 id="添加一条CNAME记录："><a href="#添加一条CNAME记录：" class="headerlink" title="添加一条CNAME记录："></a>添加一条CNAME记录：</h5><p>记录类型是<code>CNAME</code>  </p>
+<p>主机记录是<code>www</code>  </p>
+<p>解析线路<code>默认</code>  </p>
+<p>记录值用<code>CheshireJCat.github.io</code>  </p>
+<p>也就是你自己要解析的重定向的域名 </p>
+<p>等一段时间，等官方解析服务器记录后就可以通过域名来直接访问博客或者网站 </p>
+<h4 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h4><hr>
+<ul>
+<li>域名解析也有网友推荐<code>dnspos</code>,<a href="https://www.dnspod.cn/" target="_blank" rel="external">https://www.dnspod.cn/</a>,教程自行百度    </li>
+<li>此方案同样适用于搭建静态网站    </li>
+<li>jekyll详细配置适用文档<a href="http://jekyll.bootcss.com/" target="_blank" rel="external">http://jekyll.bootcss.com/</a>  </li>
+<li>博客的评论可以用 国外的 disqus，或者国内的 友言或者多说等其他评论系统 简单配置即可  </li>
+</ul>
+<p>转载请注明出处   </p>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/blog/tags/git-jekyll-配置-blog-搭建/" rel="tag">#git jekyll 配置 blog 搭建</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/blog/daisy/2016-05-30-my-first-daisy.html" rel="next" title="My First Blog">
+                <i class="fa fa-chevron-left"></i> My First Blog
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/blog/config/2016-06-01-2016-6-1-1464781883610.html" rel="prev" title="nodeJs快速创建新博客">
+                nodeJs快速创建新博客 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+<div id="cloud-tie-wrapper" class="cloud-tie-wrapper"></div>
+<script>
+  var cloudTieConfig = {
+    url: document.location.href, 
+    sourceId: "",
+    productKey: "0be04a5815334a159c318b59f3a6f2d6",
+    target: "cloud-tie-wrapper"
+  };
+</script>
+<script src="https://img1.ws.126.net/f2e/tie/yun/sdk/loader.js"></script>
+
+
+
+
+
+    <div class="post-spread">
+      
+        
+<script>
+  with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='//bdimg.share.baidu.com/static/api/js/share.js?cdnversion='+~(-new Date()/36e5)];
+</script>
+
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="//schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="http://ofn1ze8cl.bkt.clouddn.com/1.jpg"
+               alt="cheshireCat" />
+          <p class="site-author-name" itemprop="name">cheshireCat</p>
+          <p class="site-description motion-element" itemprop="description">愿无岁月可回头</p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/blog/archives">
+              <span class="site-state-item-count">19</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          
+            <div class="site-state-item site-state-categories">
+              <a href="/blog/categories">
+                <span class="site-state-item-count">6</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/blog/tags">
+                <span class="site-state-item-count">22</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="//lmaomaoz.com/" target="_blank" title="主页">
+                  
+                    <i class="fa fa-fw fa-globe"></i>
+                  
+                  主页
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="//github.com/lmaomaoz/" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-fw fa-github"></i>
+                  
+                  GitHub
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="//weibo.com/lmaomaoz/" target="_blank" title="微博">
+                  
+                    <i class="fa fa-fw fa-globe"></i>
+                  
+                  微博
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#github-pages"><span class="nav-number">1.</span> <span class="nav-text">github pages</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#git管理"><span class="nav-number">2.</span> <span class="nav-text">git管理</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#1-下载安装"><span class="nav-number">2.1.</span> <span class="nav-text">1. 下载安装</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#成功后，设置全局参数"><span class="nav-number">2.1.1.</span> <span class="nav-text">成功后，设置全局参数</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#让git显示颜色"><span class="nav-number">2.1.2.</span> <span class="nav-text">让git显示颜色</span></a></li></ol></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2-克隆远程仓库代码到本地"><span class="nav-number">2.2.</span> <span class="nav-text">2. 克隆远程仓库代码到本地</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3-创建SSH-Key"><span class="nav-number">2.3.</span> <span class="nav-text">3. 创建SSH Key</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#4-推送本地更新到远程仓库"><span class="nav-number">2.4.</span> <span class="nav-text">4. 推送本地更新到远程仓库</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#jekyll"><span class="nav-number">3.</span> <span class="nav-text">jekyll</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#确保电脑安装了ruby、pyhon、easy-install-并配置好了环境变量"><span class="nav-number">3.0.1.</span> <span class="nav-text">确保电脑安装了ruby、pyhon、easy_install 并配置好了环境变量</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#安装python"><span class="nav-number">3.0.2.</span> <span class="nav-text">安装python</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#安装easy-install"><span class="nav-number">3.0.3.</span> <span class="nav-text">安装easy_install</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#安装ruby"><span class="nav-number">3.0.4.</span> <span class="nav-text">安装ruby</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#安装-Pygments-语法高亮的插件"><span class="nav-number">3.0.5.</span> <span class="nav-text">安装 Pygments 语法高亮的插件</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#安装Jekyll"><span class="nav-number">3.0.6.</span> <span class="nav-text">安装Jekyll</span></a></li></ol></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#发表博客"><span class="nav-number">4.</span> <span class="nav-text">发表博客</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#域名绑定"><span class="nav-number">5.</span> <span class="nav-text">域名绑定</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#添加两条A记录："><span class="nav-number">5.1.</span> <span class="nav-text">添加两条A记录：</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#添加一条CNAME记录："><span class="nav-number">5.2.</span> <span class="nav-text">添加一条CNAME记录：</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#其他"><span class="nav-number">6.</span> <span class="nav-text">其他</span></a></li></ol></div>
+            
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        
+<div class="widget tag">
+    友情链接： 
+        
+          <a href='http://baidu.com' style="margin-right:10px">baidu</a>
+        
+          <a href='http://weibo.com' style="margin-right:10px">weibo</a>
+        
+</div>
+
+<div class="copyright" >
+  
+  &copy;  2016 - 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">cheshireCat</span>
+</div>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Mist
+  </a>
+</div>
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="//cdn.bootcss.com/jquery/2.1.3/jquery.min.js"></script>
+
+  
+  <script type="text/javascript" src="//cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js"></script>
+
+  
+  <script type="text/javascript" src="//cdn.bootcss.com/jquery_lazyload/1.9.7/jquery.lazyload.min.js"></script>
+
+  
+  <script type="text/javascript" src="//cdn.bootcss.com/velocity/1.2.1/velocity.min.js"></script>
+
+  
+  <script type="text/javascript" src="//cdn.bootcss.com/velocity/1.2.1/velocity.ui.min.js"></script>
+
+  
+  <script type="text/javascript" src="//cdn.bootcss.com/fancybox/2.1.4/jquery.fancybox.min.js"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/blog/js/src/utils.js?v=5.0.2"></script>
+
+  <script type="text/javascript" src="/blog/js/src/motion.js?v=5.0.2"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/blog/js/src/scrollspy.js?v=5.0.2"></script>
+<script type="text/javascript" src="/blog/js/src/post-details.js?v=5.0.2"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/blog/js/src/bootstrap.js?v=5.0.2"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+
+  
+  
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length == 0) {
+       search_path = "search.xml";
+    }
+    var path = "/blog/" + search_path;
+    // monitor main search box;
+
+    function proceedsearch() {
+      $("body").append('<div class="popoverlay">').css('overflow', 'hidden');
+      $('.popup').toggle();
+
+    }
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+    'use strict';
+    $.ajax({
+        url: path,
+        dataType: "xml",
+        async: true,
+        success: function( xmlResponse ) {
+            // get the contents from search data
+            isfetched = true;
+            $('.popup').detach().appendTo('.header-inner');
+            var datas = $( "entry", xmlResponse ).map(function() {
+                return {
+                    title: $( "title", this ).text(),
+                    content: $("content",this).text(),
+                    url: $( "url" , this).text()
+                };
+            }).get();
+            var $input = document.getElementById(search_id);
+            var $resultContent = document.getElementById(content_id);
+            $input.addEventListener('input', function(){
+                var matchcounts = 0;
+                var str='<ul class=\"search-result-list\">';
+                var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                $resultContent.innerHTML = "";
+                if (this.value.trim().length > 1) {
+                // perform local searching
+                datas.forEach(function(data) {
+                    var isMatch = false;
+                    var content_index = [];
+                    var data_title = data.title.trim().toLowerCase();
+                    var data_content = data.content.trim().replace(/<[^>]+>/g,"").toLowerCase();
+                    var data_url = data.url;
+                    var index_title = -1;
+                    var index_content = -1;
+                    var first_occur = -1;
+                    // only match artiles with not empty titles and contents
+                    if(data_title != '') {
+                        keywords.forEach(function(keyword, i) {
+                            index_title = data_title.indexOf(keyword);
+                            index_content = data_content.indexOf(keyword);
+                            if( index_title >= 0 || index_content >= 0 ){
+                                isMatch = true;
+								if (i == 0) {
+                                    first_occur = index_content;
+                                }
+                            } 
+							
+                        });
+                    }
+                    // show search results
+                    if (isMatch) {
+                        matchcounts += 1;
+                        str += "<li><a href='"+ data_url +"' class='search-result-title'>"+ data_title +"</a>";
+                        var content = data.content.trim().replace(/<[^>]+>/g,"");
+                        if (first_occur >= 0) {
+                            // cut out 100 characters
+                            var start = first_occur - 20;
+                            var end = first_occur + 80;
+                            if(start < 0){
+                                start = 0;
+                            }
+                            if(start == 0){
+                                end = 50;
+                            }
+                            if(end > content.length){
+                                end = content.length;
+                            }
+                            var match_content = content.substring(start, end);
+                            // highlight all keywords
+                            keywords.forEach(function(keyword){
+                                var regS = new RegExp(keyword, "gi");
+                                match_content = match_content.replace(regS, "<b class=\"search-keyword\">"+keyword+"</b>");
+                            });
+
+                            str += "<p class=\"search-result\">" + match_content +"...</p>"
+                        }
+                        str += "</li>";
+                    }
+                })};
+                str += "</ul>";
+                if (matchcounts == 0) { str = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>' }
+                if (keywords == "") { str = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>' }
+                $resultContent.innerHTML = str;
+            });
+            proceedsearch();
+        }
+    });}
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched == false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+
+    });
+
+    $('.popup-btn-close').click(function(e){
+      $('.popup').hide();
+      $(".popoverlay").remove();
+      $('body').css('overflow', '');
+    });
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+  </script>
+
+
+  
+
+  
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
+  <script>AV.initialize("mNKEFSzGVbEudCRFBXmMLjMo-gzGzoHsz", "0x9s3yuqX7J6eNLKbw1ugxC2");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
+
+  
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+
+  
+
+
+</body>
+</html>
