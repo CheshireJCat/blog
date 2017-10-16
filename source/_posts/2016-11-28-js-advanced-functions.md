@@ -5,7 +5,6 @@ tags:
 - javascript
 categories:
 - javascript
-- readNote
 ---
 
 > 《javascript高级程序设计》
