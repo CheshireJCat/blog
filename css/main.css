@@ -1566,7 +1566,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #cfe458;
+  background: #9aa7ff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2616,4 +2616,13 @@ hr {
     width: auto;
     text-align: center;
   }
+}
+.tac {
+  text-align: center;
+}
+.tal {
+  text-align: left;
+}
+.tar {
+  text-align: right;
 }
