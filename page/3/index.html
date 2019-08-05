@@ -285,6 +285,266 @@
             
               
                 
+                <a class="post-title-link" href="/blog/config/2016-08-25-2016-8-25-1472091755618.html" itemprop="url">
+                  jekyll之博客分类
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-08-25T00:00:00+08:00" content="2016-08-25">
+              2016-08-25
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/blog/categories/config/" itemprop="url" rel="index">
+                    <span itemprop="name">config</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+          
+          
+             <span id="/blog/config/2016-08-25-2016-8-25-1472091755618.html" class="leancloud_visitors" data-flag-title="jekyll之博客分类">
+               &nbsp; | &nbsp;
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               <span class="post-meta-item-text">阅读次数 </span>
+               <span class="leancloud-visitors-count"></span>
+              </span>
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <p>博客分类这件事，之前由于忙，只是简单的作了一下处理：在首页列出分类列表，然后写了一段js，点击的时候隐藏非当前分类的文章，展示当前分类的文章。不过这也不是长久之计，当文章数量多起来的时候，效率可想而知。所以今天抽出一点时间，按正规的方式加上分类。<br>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/blog/config/2016-08-25-2016-8-25-1472091755618.html#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="//schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/blog/config/2016-08-25-2016-8-25-1472104723404.html" itemprop="url">
+                  jekyll 第三方插件无法在 github Pages 使用的解决办法
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-08-25T00:00:00+08:00" content="2016-08-25">
+              2016-08-25
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/blog/categories/config/" itemprop="url" rel="index">
+                    <span itemprop="name">config</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+          
+          
+             <span id="/blog/config/2016-08-25-2016-8-25-1472104723404.html" class="leancloud_visitors" data-flag-title="jekyll 第三方插件无法在 github Pages 使用的解决办法">
+               &nbsp; | &nbsp;
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               <span class="post-meta-item-text">阅读次数 </span>
+               <span class="leancloud-visitors-count"></span>
+              </span>
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <p>今天抽了点时间处理了一下博客的分类系统，在本地环境的时候运行的挺好，上传到github之后，却产生了404错误，分类页面的展示页面没有生成。  </p>
+<p>经过一番查找，发现问题是：  </p>
+<blockquote>
+<p>在 GitHub Pages 使用插件<br>GitHub Pages是由Jekyll提供技术支持的，考 虑到安全因素，所有的 Pages 通过 –safe 选项禁用了插件功能，因此如果你的网 站部署在 Github Pages ，那么你的插件不会工作。</p>
+</blockquote>
+<p>不过仍然有办法发布到 GitHub Pages，你只需在本地做一些转换，并把生成好的文件上传到 Github 替代 Jekyll 就可以了。  </p>
+<p>也只能这么解决了，不过总不能每次都生成之后拷贝，覆盖，这样太麻烦了。  </p>
+<p>google一下之后，找到一个不错的解决方法，大致就是现在本地创建一个用于写作的分支，如<code>docs</code>  </p>
+<p>然后删除之前<code>ph-pages</code>或者<code>master</code>分支的内容，再讲<code>docs</code>下生成的静态文件复制到<code>网页所在分支</code><br>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/blog/config/2016-08-25-2016-8-25-1472104723404.html#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="//schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/blog/daisy/2016-08-18-2016-8-18-1471505585364.html" itemprop="url">
                   After the Ending & Before the Beginning
                 </a>
@@ -642,263 +902,11 @@
 
 
     
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="//schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/blog/javascript/2016-06-29-2016-6-29-1467188211060.html" itemprop="url">
-                  console的用法
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-06-29T00:00:00+08:00" content="2016-06-29">
-              2016-06-29
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/blog/categories/javascript/" itemprop="url" rel="index">
-                    <span itemprop="name">javascript</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-
-          
-          
-             <span id="/blog/javascript/2016-06-29-2016-6-29-1467188211060.html" class="leancloud_visitors" data-flag-title="console的用法">
-               &nbsp; | &nbsp;
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               <span class="post-meta-item-text">阅读次数 </span>
-               <span class="leancloud-visitors-count"></span>
-              </span>
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h5 id="console-log"><a href="#console-log" class="headerlink" title="console.log"></a>console.log</h5><p>Console.log 是最简单输出信息到 console 窗口的方法，支持多个参数，该方法会把 这些参数组合在一起显示<br>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/blog/javascript/2016-06-29-2016-6-29-1467188211060.html#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="//schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/blog/config/2016-06-27-2016-6-27-1466994001633.html" itemprop="url">
-                  gulpfile通用配置
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-06-27T00:00:00+08:00" content="2016-06-27">
-              2016-06-27
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/blog/categories/config/" itemprop="url" rel="index">
-                    <span itemprop="name">config</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-
-          
-          
-             <span id="/blog/config/2016-06-27-2016-6-27-1466994001633.html" class="leancloud_visitors" data-flag-title="gulpfile通用配置">
-               &nbsp; | &nbsp;
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               <span class="post-meta-item-text">阅读次数 </span>
-               <span class="leancloud-visitors-count"></span>
-              </span>
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h2 id="安装插件"><a href="#安装插件" class="headerlink" title="安装插件"></a>安装插件</h2><p><code>npm install gulp-ruby-sass gulp-autoprefixer gulp-minify-css gulp-jshint gulp-concat gulp-uglify gulp-imagemin gulp-clean gulp-notify gulp-rename gulp-livereload gulp-cache --save-dev</code><br>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/blog/config/2016-06-27-2016-6-27-1466994001633.html#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-
-
-    
   </section>
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/blog/page/2/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/blog/">1</a><a class="page-number" href="/blog/page/2/">2</a><span class="page-number current">3</span><a class="page-number" href="/blog/page/4/">4</a><a class="extend next" rel="next" href="/blog/page/4/"><i class="fa fa-angle-right"></i></a>
+    <a class="extend prev" rel="prev" href="/blog/page/2/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/blog/">1</a><a class="page-number" href="/blog/page/2/">2</a><span class="page-number current">3</span><a class="page-number" href="/blog/page/4/">4</a><a class="page-number" href="/blog/page/5/">5</a><a class="extend next" rel="next" href="/blog/page/4/"><i class="fa fa-angle-right"></i></a>
   </nav>
 
 
@@ -939,7 +947,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/blog/archives">
-              <span class="site-state-item-count">20</span>
+              <span class="site-state-item-count">22</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -1032,7 +1040,7 @@
 <div class="copyright" >
   
   &copy;  2016 - 
-  <span itemprop="copyrightYear">2018</span>
+  <span itemprop="copyrightYear">2019</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
