@@ -26,6 +26,17 @@ tags:
 - webGL 旋转渲染是如何实现的
 - 解释一下着色器是什么
 - nodejs相关
+- 斐波那契数列实现及优化(递归与优化)
+- 搜索匹配，编辑器autoComplete实现各项要点
+- 手写promise.all
+- 手写vue router 
+- 长列表问题的处理
+- 下拉刷新保持原位置的实现
+- http缓存
+- 状态码
+- Es6 extend 实现
+- js事件循环机制
+- 背包问题算法
 
 </div>
 <button id="want">想查看的话414吧</button>
