@@ -95,7 +95,7 @@
 <meta property="og:description" content="之前有个需求要做个抽奖系统，由于时间赶，只是单纯的实现通过随机更改用户头像和名字的方式实现,大致代码如下：123456var data = [1,2,3,4,5],now = 0;setInterval(function()&amp;#123;    now++;    (now &amp;gt;= data.length) &amp;amp;&amp;amp; (now = 0);    show(data[now]);&amp;#1">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://lmaomaoz.com/blog/no/2019-08-14-luckyDraw/html.jpg">
-<meta property="og:updated_time" content="2019-08-15T04:19:12.619Z">
+<meta property="og:updated_time" content="2019-08-15T04:25:51.514Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="luckyDraw">
 <meta name="twitter:description" content="之前有个需求要做个抽奖系统，由于时间赶，只是单纯的实现通过随机更改用户头像和名字的方式实现,大致代码如下：123456var data = [1,2,3,4,5],now = 0;setInterval(function()&amp;#123;    now++;    (now &amp;gt;= data.length) &amp;amp;&amp;amp; (now = 0);    show(data[now]);&amp;#1">
@@ -338,8 +338,7 @@
         <p>之前有个需求要做个抽奖系统，由于时间赶，只是单纯的实现通过随机更改用户头像和名字的方式实现,大致代码如下：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> data = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>],now = <span class="number">0</span>;</div><div class="line">setInterval(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">    now++;</div><div class="line">    (now &gt;= data.length) &amp;&amp; (now = <span class="number">0</span>);</div><div class="line">    show(data[now]);</div><div class="line">&#125;,<span class="number">100</span>);</div></pre></td></tr></table></figure></p>
 <p>当时也尝试在网上找个现成的滚动抽奖，但基本都不尽人意，有些demo还是通过<code>background-repeat:repeat</code>,然后无限增加<code>background-position-y</code>的方式滚动实现，只能静态固定数据抽奖，局限性太大。  </p>
 <p>最近忽然想起来，趁着有空，写个插件方便以后优化和另做他用。  </p>
-<hr>
-<p>实现思路其实很简单：  </p>
+<h2 id><a href="#" class="headerlink" title></a><a id="more"></a></h2><p>实现思路其实很简单：  </p>
 <ol>
 <li>循环滚动；  </li>
 <li>慢入，慢出。  </li>
@@ -588,7 +587,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#布局"><span class="nav-number">1.</span> <span class="nav-text">布局</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#动起来"><span class="nav-number">2.</span> <span class="nav-text">动起来</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#循环"><span class="nav-number">3.</span> <span class="nav-text">循环</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#慢入慢出"><span class="nav-number">4.</span> <span class="nav-text">慢入慢出</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#关于内定抽奖的方式-，暂不实现了，提供几个思路"><span class="nav-number">5.</span> <span class="nav-text">关于内定抽奖的方式 ，暂不实现了，提供几个思路</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#谢绝转载"><span class="nav-number">6.</span> <span class="nav-text">谢绝转载</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#"><span class="nav-number">1.</span> <span class="nav-text"></span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#布局"><span class="nav-number">1.0.0.1.</span> <span class="nav-text">布局</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#动起来"><span class="nav-number">1.0.0.2.</span> <span class="nav-text">动起来</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#循环"><span class="nav-number">1.0.0.3.</span> <span class="nav-text">循环</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#慢入慢出"><span class="nav-number">1.0.0.4.</span> <span class="nav-text">慢入慢出</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#关于内定抽奖的方式-，暂不实现了，提供几个思路"><span class="nav-number">1.0.0.5.</span> <span class="nav-text">关于内定抽奖的方式 ，暂不实现了，提供几个思路</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#谢绝转载"><span class="nav-number">1.0.0.6.</span> <span class="nav-text">谢绝转载</span></a></li></ol></li></ol></li></ol></li></ol></div>
             
           </div>
         </section>
