@@ -339,7 +339,8 @@
         
           <p>之前有个需求要做个抽奖系统，由于时间赶，只是单纯的实现通过随机更改用户头像和名字的方式实现,大致代码如下：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> data = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>],now = <span class="number">0</span>;</div><div class="line">setInterval(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">    now++;</div><div class="line">    (now &gt;= data.length) &amp;&amp; (now = <span class="number">0</span>);</div><div class="line">    show(data[now]);</div><div class="line">&#125;,<span class="number">100</span>);</div></pre></td></tr></table></figure></p>
 <p>当时也尝试在网上找个现成的滚动抽奖，但基本都不尽人意，有些demo还是通过<code>background-repeat:repeat</code>,然后无限增加<code>background-position-y</code>的方式滚动实现，只能静态固定数据抽奖，局限性太大。  </p>
-<p>最近忽然想起来，趁着有空，写个插件方便以后优化和另做他用。  </p>
+<p>最近忽然想起来，趁着有空，写个插件方便以后优化和另做他用。    </p>
+<p><strong>github</strong>: <a href="https://github.com/CheshireJCat/LuckDraw" target="_blank" rel="external">https://github.com/CheshireJCat/LuckDraw</a><br><strong>demo</strong>: <a href="http://lmaomaoz.com/LuckDraw/">http://lmaomaoz.com/LuckDraw/</a></p>
 <h2 id><a href="#" class="headerlink" title></a></h2>
           <div class="post-more-link text-center">
             <a class="btn" href="/blog/no/2019-08-14-luckyDraw.html#more" rel="contents">
